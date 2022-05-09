@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 620px;
+    height: 557px;
+    background-color: #cdfcff;
+    position: relative;
+    animation: night 4s linear infinite ;
+}
+
+@keyframes night{
+    0%{background-color: #cdfcff;}
+    50%{background-color: #444848;}
+    100%{background-color: #0c0c0c;}
+}
+
+
+.sun{
+    width: 70px;
+    height: 70px;
+    background-color:#feed97;
+    background-image:radial-gradient(circle,white, #fddc76) ;
+    border-radius: 50%;
+    position: absolute;
+    left: 395px;
+    top: 120px;
+    z-index: 1;
+    animation: sun 4s linear infinite ;
+}
+@keyframes sun{
+    0%{left: 395px;top: 120px; z-index: 1; }
+    50%{left: 395px;top: 240px;opacity: 0.9; z-index: 1; }
+    100%{left: 395px;top: 360px; opacity: 0; z-index: -1;}
+}
+
+.cloud{
+    width: 25%;
+    height: 7%;
+    background-color:#ffffff;
+    border-radius: 20px;
+}
+
+.c-1{
+    position: absolute;
+    left:255px;
+    top:170px;
+}
+
+.c-2{
+    position: absolute;
+    left:210px;
+    top:205px;
+}
+
+.c-3{
+    position: absolute;
+    left:165px;
+    top:240px;
+}
+
+.bush-top{
+    width: 9%;
+    height: 11%;
+    background-color:#a7f184;
+    border-radius: 50%;
+    position: absolute;
+    left:402px;
+    top:360px;
+}
+
+.bush-bottom{
+    width: 100px;
+    height: 35px;
+    background-color:#a7f184;
+    border-radius: 30px;
+    position: absolute;
+    left:380px;
+    top:390px;  
+}
+
+.ground{
+    position: absolute;
+    width: 100%;
+    height: 1%;
+    background-color: #000000;
+    left: 0;
+    top: 76%;
+}
+
+.tree{
+    position: absolute;
+    width: 14%;
+    height: 30%;
+    background-color: #b0f2b0;
+    left: 42%;
+    top: 31%;
+    border-radius: 50px;
+}
+
+.bole{
+    position: absolute;
+    width: 0.8%;
+    height: 28%;
+    background-color: #000000;
+    left: 48.8%;
+    top: 48%;
+}
+
+.branch{
+    width: 0.7%;
+    height: 6%;
+    background-color: #000000;
+}
+
+.b-1{
+    position: absolute;
+    left: 47%;
+    top: 46%;
+    transform: rotate(-45deg);
+}
+.b-2{
+    position: absolute;
+    left: 50.5%;
+    top: 50%;
+    transform: rotate(45deg);
+}
+.b-3{
+    position: absolute;
+    left: 47%;
+    top: 53%;
+    transform: rotate(-45deg);
+}
+
+.car{
+    position: absolute;
+    left: 25%;
+    top: 65%;
+    animation: car 4s linear infinite ;
+}
+
+@keyframes car{
+    0%{left: 0%;top: 65%; opacity: 1;}
+    30%{left: 30%;top: 65%; opacity: 1;}
+    60%{left: 60%;top: 65%; opacity: 1;}
+    100%{left: 90%;top: 65%; opacity: 0; }
+}
+.car-main{
+    width: 90px;
+    height: 60px;
+    background-color:#004cff;
+    border-top-left-radius:35px;  
+    border-top-right-radius: 35px; 
+    border-bottom: 0;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    /* z-index: 1; */
+}
+
+.car-front{
+    width: 60px;
+    height: 40px;
+    background-color:#004cff;
+    border-top-left-radius:30px;  
+    border-top-right-radius: 30px; 
+    border-bottom: 0;
+    position: absolute;
+    left: -15px;
+    top: 10px;
+}
+.car-back{
+    width: 60px;
+    height: 40px;
+    background-color:#004cff;
+    border-top-left-radius:30px;  
+    border-top-right-radius: 30px; 
+    border-bottom: 0;
+    position: absolute;
+    left: 45px;
+    top: 10px
+}
+
+.tire-1{
+    width: 30px;
+    height: 30px;
+    background-color:#696969;
+    border-left:7px solid #000000;
+    border-top:7px solid red;
+    border-right:7px solid yellow;
+    border-bottom:7px solid purple;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top:20px;
+    animation: tire 4s infinite  linear;
+    
+
+}
+
+@keyframes tire{
+    0%{transform: rotate(0deg);}
+    30%{transform: rotate(90deg);}
+    60%{transform: rotate(180deg);}
+    100%{transform: rotate(270deg);}
+}
+
+.tire-2{
+    width: 30px;
+    height: 30px;
+    background-color:#696969;
+    border-left:7px solid #000000;
+    border-top:7px solid red;
+    border-right:7px solid yellow;
+    border-bottom:7px solid purple;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top:20px;
+    animation: tire 4s infinite  linear;
+
+}
+
+@keyframes tire{
+    0%{transform: rotate(0deg);}
+    30%{transform: rotate(90deg);}
+    60%{transform: rotate(180deg);}
+    100%{transform: rotate(270deg);}
+}
+
+.window-1{
+    width: 25px;
+    height: 25px;
+    background-color: #cdfcff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: absolute;
+    left: 15px;
+    top:-8px;
+}
+
+.window-2{
+    width: 25px;
+    height: 25px;
+    background-color: #cdfcff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: absolute;
+    left: 53px;
+    top:-8px;
+}
+
+.moon{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    transform: translate(100%, 900%);
+    box-shadow: -15px 5px 2px 7px rgb(182, 174, 174) ;
+    border-radius: 50%;
+    opacity: 0;
+    animation: moon 4s infinite  linear; 
+}
+
+@keyframes moon{
+    0%{transform: translate(100%, 900%); opacity: 0;}
+    50%{transform: translate(100%, 450%); opacity: 0.5;}
+    100%{transform: translate(100%, 0%); opacity: 1;}
+}
